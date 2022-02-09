@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Lobster&family=Waterfall&display=swap");
+
+.hidden {
+  display: none;
+}
+
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  /* right: 0; */
+  top: 0;
+  /* bottom: 0; */
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.default {
+  z-index: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#clock {
+  font-family: "Lobster", cursive;
+  font-size: 100px;
+  margin-bottom: 200px;
+}
+
+#greeting {
+  font-family: "Lobster", cursive;
+}
+
+#weather {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 15px;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+#quote {
+  font-family: "Waterfall", cursive;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#login-form {
+  margin-bottom: 30px;
+}
+
+#login-form input {
+  background-color: beige;
+  opacity: 0.8;
+  border: 2px solid beige;
+  border-radius: 20px;
+}
+
+#login-form input:first-child {
+  padding: 10px;
+}
+
+#login-form input:first-child:focus {
+  outline-color: beige;
+}
+
+#login-form input:first-child::placeholder {
+  font-family: "Lobster", cursive;
+}
+
+#login-form input:last-child {
+  font-family: "Lobster", cursive;
+  margin-left: 10px;
+}
+
+#todo-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#todo-form input {
+  background-color: beige;
+  opacity: 0.8;
+  border: 2px solid beige;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#todo-form input:focus {
+  outline-color: beige;
+}
+
+#todo-form input::placeholder {
+  font-family: "Lobster", cursive;
+}
+
+#todo-list {
+  font-family: "Lobster", cursive;
+  position: relative;
+}
+
+#todo-list li button {
+  border-radius: 10px;
+  background-color: transparent;
+  margin-left: 10px;
+  position: absolute;
+  right: -100px;
+}
+
+#todo-list li {
+  margin-bottom: 10px;
+  padding-right: 300px;
+}
+
+#todo-list {
+  list-style: none;
+}
+
+#todo-list li::before {
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
